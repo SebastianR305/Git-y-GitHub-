@@ -1,0 +1,20 @@
+Git y GitHub
+con este control de versiones, podemos guardar especificamente los cambios de un archivo en ves de guardar el archivo completo varias veces, cada ves que se le hace un cambio 
+
+git init -"sirve para empezar un repositorio"
+  
+git add ... -"sirve para anadir este archivo a el repositorio"
+  
+git commit -"sirve para enviar los cambios del archivo"
+
+git commit -m "version 1" -"sirve para anadir una nota a los cambios realizados"
+
+git add . -"sirve para agregar todos los archivos que han tenido un cambio"
+
+git status -"sirve para ver como esta el archivo"
+
+git show -"sirve para ver todos los cambios realizados en el archivo"
+
+git log ... -"sirve para ver toda la historia de un archivo"
+  
+  
