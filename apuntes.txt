@@ -46,3 +46,7 @@ rm ... -"borrar por completo un archivo"
 
 "comando" --help -"todos los comandos que se pueden escribir"
 
+esc+shift+zz =salir forzado de VIM 
+
+git diff ... ... -"hacer uan diferencia de las dos versiones"
+
