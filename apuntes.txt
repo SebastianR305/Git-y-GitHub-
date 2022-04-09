@@ -16,5 +16,33 @@ git status -"sirve para ver como esta el archivo"
 git show -"sirve para ver todos los cambios realizados en el archivo"
 
 git log ... -"sirve para ver toda la historia de un archivo"
-  
-  
+
+linea de comandos basicos: 
+
+pwd -"muestra la ruta de la carpeta en la que se encuentra"
+
+cd .../ -"change directory, cambiar la carpeta en la que se encuentra"
+
+ls -"mostrar los archivos de la carpeta en la que esta"
+ls -al -"mostrar todos los archivos listados, incluidos los ocultos"
+ls -l -"mostrar los todos los archivos listados, sin incluir los ocultos"
+ls -a -"muestra todos los archivos pero no listados"
+
+clear -"limpiar consola"
+
+. =carpeta en la que se encuentra 
+.. =carpeta anterior en la que estaba 
+
+mkdir ... -"crear carpeta"
+
+touch ... -"crear archivo vacio"
+
+cat -"muestra el contenido de un archivo"
+
+history -"muestra la historia completa de comandos escrita"
+!1 -"repite el comando listado en el numero seleccionado"
+
+rm ... -"borrar por completo un archivo"
+
+"comando" --help -"todos los comandos que se pueden escribir"
+
