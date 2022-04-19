@@ -48,5 +48,12 @@ rm ... -"borrar por completo un archivo"
 
 esc+shift+zz =salir forzado de VIM 
 
-git diff ... ... -"hacer uan diferencia de las dos versiones"
+git diff ... ... -"hacer una diferencia de las dos versiones"
+
+RAMAS:
+Master: es cada uno de los commit o versiones del proyecto
+Experimentos-Development: se copia una version y se le pone un nombre, aqui puedo seguir con los commits comunmente, pero el residuo es completamente diferente a la version actual
+Bugfixing-Hotfix: es cuando se detecta un problema o bug el cual debe de ser modificado creando esta rama 
+
+merge: es cuando se conectan los cambios de una rama a la rama actual, creando una nueva
 
