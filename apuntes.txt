@@ -57,3 +57,19 @@ Bugfixing-Hotfix: es cuando se detecta un problema o bug el cual debe de ser mod
 
 merge: es cuando se conectan los cambios de una rama a la rama actual, creando una nueva
 
+git reset ... --hard -"sirve para volver completamente a la version del commit seleccionado"
+git reset ... --soft -"se vuelve a la version seleccionada, pero la historia del archivo queda intacta"
+git reset HEAD -"sirve para sacar un archivo del area staging y asi que los ultimos cambios no se envien al ultimo commit"
+...= version del commit
+ojo"con git reset se podra volver a una version anterior del archivo, pero al efectuar el comando, se borra la historia y solo queda sobreescribirla"
+
+git checkout ... ,,, -"sirve para ver la version seleccionada del archivo seleccionado"
+git checkout master ,,, -"sirve para volver a la rama master del archivo"
+...= version del commit ,,,= archivo
+ojo"si despues de esto incluimos un commit eliminaremos todo lo que se haya hecho despues"
+
+git rm -"sirve para eliminar un archivo, para volver a los archivos anteriores despues del eliminado"
+git rm --cached -"elimina el archivo, pero aun asi lop mantiene en el disco duro, los archivos pasaran a un estado untracked"
+git rm --force -"elimina el archivo, pero git siempre guarda todo, por lo que se podra acceder al archivo pero con comandos mucho mas avanzados"
+ojo"estos archivos pueden recuperarse por medio de otros comandos"
+
