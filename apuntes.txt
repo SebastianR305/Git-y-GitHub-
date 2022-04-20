@@ -3,9 +3,10 @@ con este control de versiones, podemos guardar especificamente los cambios de un
 
 git init -"sirve para empezar un repositorio"
   
-git add ... -"sirve para anadir este archivo a el repositorio"
-  
-git commit -"sirve para enviar los cambios del archivo"
+git add ... -"sirve para anadir este archivo a el area de staging"
+ojo"si a un archivo creado, nunca se le efectua este comando, el archivo estara untracked, por lo que en un futuro se eliminara"  
+
+git commit -"sirve para enviar todo lo que esta en staging a el repositorio local"
 
 git commit -m "version 1" -"sirve para anadir una nota a los cambios realizados"
 
@@ -42,9 +43,7 @@ cat -"muestra el contenido de un archivo"
 history -"muestra la historia completa de comandos escrita"
 !1 -"repite el comando listado en el numero seleccionado"
 
-rm ... -"borrar por completo un archivo"
-
-"comando" --help -"todos los comandos que se pueden escribir"
+"comando" --help -"todos los comandos que se pueden escribir con este comando"
 
 esc+shift+zz =salir forzado de VIM 
 
@@ -56,6 +55,7 @@ Experimentos-Development: se copia una version y se le pone un nombre, aqui pued
 Bugfixing-Hotfix: es cuando se detecta un problema o bug el cual debe de ser modificado creando esta rama 
 
 merge: es cuando se conectan los cambios de una rama a la rama actual, creando una nueva
+
 
 git reset ... --hard -"sirve para volver completamente a la version del commit seleccionado"
 git reset ... --soft -"se vuelve a la version seleccionada, pero la historia del archivo queda intacta"
@@ -72,4 +72,16 @@ git rm -"sirve para eliminar un archivo, para volver a los archivos anteriores d
 git rm --cached -"elimina el archivo, pero aun asi lop mantiene en el disco duro, los archivos pasaran a un estado untracked"
 git rm --force -"elimina el archivo, pero git siempre guarda todo, por lo que se podra acceder al archivo pero con comandos mucho mas avanzados"
 ojo"estos archivos pueden recuperarse por medio de otros comandos"
+
+comandos para el repositorio remoto:
+
+git clone url -"sirve para traer una copia del master a mi carpeta actual y crea la base de datos de todos los cambios historicos en el repositorio local"
+
+git push -"sirve para enviar la ultima version de los commits a el repositorio remoto"
+
+git fetch -"sirve para traer un cambio de el repositorio remoto a mi repositorio local"
+
+git merge -"sirve para fusionar la ultima version de mi repositorio local con mi version actual"
+
+git pull -"sirve para copiar el archivo del repositorio remoto en el repositorio local y el directorio"
 
