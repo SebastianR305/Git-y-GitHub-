@@ -2,15 +2,16 @@ Git y GitHub
 con este control de versiones, podemos guardar especificamente los cambios de un archivo en ves de guardar el archivo completo varias veces, cada ves que se le hace un cambio 
 
 git init -"sirve para empezar un repositorio"
-  
+
 git add ... -"sirve para anadir este archivo a el area de staging"
+git add . -"sirve para agregar todos los archivos que han tenido un cambio"
 ojo"si a un archivo creado, nunca se le efectua este comando, el archivo estara untracked, por lo que en un futuro se eliminara"  
 
 git commit -"sirve para enviar todo lo que esta en staging a el repositorio local"
-
-git commit -m "version 1" -"sirve para anadir una nota a los cambios realizados"
-
-git add . -"sirve para agregar todos los archivos que han tenido un cambio"
+git commit -m "..." -"sirve para anadir una nota a los cambios realizados"
+git commit -a -"sirve para saltarse el codigo (git add)"
+git commit -am "..." -"sirve para saltarse el codigo (git add)"
+ojo"git commit -a o -am solo se puede efectuar si el archivo ya ha sido añadido anteriormente"
 
 git status -"sirve para ver como esta el archivo"
 
@@ -49,6 +50,7 @@ esc+shift+zz =salir forzado de VIM
 
 git diff ... ... -"hacer una diferencia de las dos versiones"
 
+
 RAMAS:
 Master: es cada uno de los commit o versiones del proyecto
 Experimentos-Development: se copia una version y se le pone un nombre, aqui puedo seguir con los commits comunmente, pero el residuo es completamente diferente a la version actual
@@ -73,6 +75,7 @@ git rm --cached -"elimina el archivo, pero aun asi lop mantiene en el disco duro
 git rm --force -"elimina el archivo, pero git siempre guarda todo, por lo que se podra acceder al archivo pero con comandos mucho mas avanzados"
 ojo"estos archivos pueden recuperarse por medio de otros comandos"
 
+
 comandos para el repositorio remoto:
 
 git clone url -"sirve para traer una copia del master a mi carpeta actual y crea la base de datos de todos los cambios historicos en el repositorio local"
@@ -85,3 +88,11 @@ git merge -"sirve para fusionar la ultima version de mi repositorio local con mi
 
 git pull -"sirve para copiar el archivo del repositorio remoto en el repositorio local y el directorio"
 
+
+git branch ... -"sirve para crear una rama, aqui estaremos trabajando en esta rama y en la master"
+ojo"para trabajar solo sobre la rama creada: git checkout ..."
+
+git merge ...-"sirve para añadir o mezclar los archivos de la rama seleccionada a la rama en la que estoy"
+ojo"la rama en la que nos encontremos en el momento, sera la rama definitiva"
+
+-cuando halla un problema en el merge, simplemente tendremos que solucionarlo manualmente, VSC brinda ayuda para esta ocacion-
