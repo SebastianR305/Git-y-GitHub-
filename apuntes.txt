@@ -79,20 +79,31 @@ ojo"estos archivos pueden recuperarse por medio de otros comandos"
 comandos para el repositorio remoto:
 
 git clone url -"sirve para traer una copia del master a mi carpeta actual y crea la base de datos de todos los cambios historicos en el repositorio local"
-
 git push -"sirve para enviar la ultima version de los commits a el repositorio remoto"
-
 git fetch -"sirve para traer un cambio de el repositorio remoto a mi repositorio local"
-
 git merge -"sirve para fusionar la ultima version de mi repositorio local con mi version actual"
-
 git pull -"sirve para copiar el archivo del repositorio remoto en el repositorio local y el directorio"
-
+git push ... main -"sirve para fusionar una copia del repositorio local en el remoto"
+git pull ... master -"sirve para fusionar una copia del repositorio remoto en el local"
 
 git branch ... -"sirve para crear una rama, aqui estaremos trabajando en esta rama y en la master"
 ojo"para trabajar solo sobre la rama creada: git checkout ..."
 
-git merge ...-"sirve para añadir o mezclar los archivos de la rama seleccionada a la rama en la que estoy"
+git merge ...-"sirve para anadir o mezclar los archivos de la rama seleccionada a la rama en la que estoy"
 ojo"la rama en la que nos encontremos en el momento, sera la rama definitiva"
-
 -cuando halla un problema en el merge, simplemente tendremos que solucionarlo manualmente, VSC brinda ayuda para esta ocacion-
+
+git remote add origin url -"sirve para crear un repositorio remoto en nuestro repositorio local"
+git remote -"sirve para ver los repositorios remotos anadidos"
+git remote -v -"sirve para ver lo que podemos hacer con este repositorio remoto"
+
+SSH:generacion de clave publica y privada
+
+ssh-keygen -t rsa -b 4096 -C "sebasruiz745@gmail.com" -"sirve para crear una clave de cifrado publica y privada"
+eval (ssh-agent -s) -"sirve para comprobar el servicio de cifrado" 
+ssh-add ruta-id_rsa -"sirve para anadir al sistema la ubicacion de un archivo que contiene la llave privada"
+
+alias ...="codigo o codigos" -"sirve para facilitar el trabajo en el momento de codificar, solo escribo el alias y es como si me reescribiera el codigo"
+git tag -a ... -m "mensaje" (hash) -"sirve para poner una version y tener una referencia, teniendo asi un control de versiones"
+git push origin --tags -"sirve para enviar los cambios de tags anadidos en el archivo al repositorio remoto"
+git push origin :refs/tags/... -"sirve para borrar un tag existente en el repositorio remoto"
