@@ -105,5 +105,11 @@ ssh-add ruta-id_rsa -"sirve para anadir al sistema la ubicacion de un archivo qu
 
 alias ...="codigo o codigos" -"sirve para facilitar el trabajo en el momento de codificar, solo escribo el alias y es como si me reescribiera el codigo"
 git tag -a ... -m "mensaje" (hash) -"sirve para poner una version y tener una referencia, teniendo asi un control de versiones"
+
 git push origin --tags -"sirve para enviar los cambios de tags anadidos en el archivo al repositorio remoto"
 git push origin :refs/tags/... -"sirve para borrar un tag existente en el repositorio remoto"
+
+gitk -"abre una extencion, en la cual podemos observar el archivo y su historia"
+
+git show-branch -"sirve para ver las ramas y su historia"
+git show-branch --all -"para ver las ramas y su historia con mas datos"
